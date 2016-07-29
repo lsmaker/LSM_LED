@@ -1,5 +1,18 @@
 # LSM_LED
-This module uses one of the digital pins from the Arduino board to output a square wave that can be used to control an external LED creating a periodic blinking effect on it. The digital pin to use and the blinking period values can be set using the class constructor parameters.
+This module uses one of the digital pins from the Arduino board to output a square wave that can be used to control an external LED creating a periodic blinking effect. The digital pin used and the blinking period value can be passed by the user to the class constructor.
+
+# Download
+[LSM_LED.zip](https://github.com/lsmaker/LSM_LED/releases/download/1.0/LSM_LED.zip)
+
+# Clone
+**Using SSH**
+```
+git clone --recursive git@github.com:lsmaker/LSM_LED.git LSM_LED
+```
+**Using HTTPS**
+```
+git clone --recursive https://github.com/lsmaker/LSM_LED.git LSM_LED
+```
 
 # Example
 ```
@@ -17,6 +30,8 @@ void setup(){
 }
 
 void loop(){
+  //Do something else if you want here. This code will not affect the LED
+  //blinking effect even is using blocking instructions.
 }
 ```
 
