@@ -24,7 +24,7 @@ using namespace LSM;
 #define PIN_LED 13        //Must be a digital pin!
 #define BLINK_PERIOD 1000 //In milliseconds!
 
-LED *led = new LED(PIN_LED,BLINK_PERIDOD);
+LED *led = new LED(PIN_LED,BLINK_PERIOD);
 
 void setup(){
   LSMaker::init();
