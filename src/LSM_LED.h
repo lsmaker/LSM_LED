@@ -14,22 +14,26 @@
 #include <Arduino.h>
 #include "External/LSMakerModule.h"
 
-class LSM_LED : public LSMakerModule{
+namespace LSM{
 
-    private:
+    class LED : public LSMakerModule{
 
-        unsigned char status = 0;
-        unsigned long timer = 0;
-        unsigned long blinkTime = 0;
-        unsigned char pin;
+        private:
 
-    public:
-        LSM_LED(unsigned char pin, unsigned long blinkTime);
-        void init(void);
-        void execute(void);
-        void destroy(void);
-        String getModuleName(void);
+            unsigned char status = 0;
+            unsigned long timer = 0;
+            unsigned long blinkTime = 0;
+            unsigned char pin;
 
-};
+        public:
+            LED(unsigned char pin, unsigned long blinkTime);
+            void init(void);
+            void execute(void);
+            void destroy(void);
+            String getModuleName(void);
+
+    };
+
+}
 
 #endif
